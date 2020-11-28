@@ -9,10 +9,10 @@ class Bomb extends React.Component{
             }
             const secondsLeft = props.initialCount
             if (this.state === 120) {
-                return "120 seconds left before I go boom!"
+                return<h1>120 seconds left before I go boom!</h1>
             } 
-            if (this.state === 0){
-                return "Boom!"
+            if (secondsLeft === 0){
+                return <h1>"Boom!"</h1>
             }
         }
         
